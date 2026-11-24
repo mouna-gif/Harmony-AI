@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-21 21:19:59",
+  "best_anomaly_detector": {
+    "name": "Isolation Forest",
+    "f1_score": 0.08955223880597014,
+    "precision": 0.046875,
+    "recall": 1.0
+  },
+  "best_performance_predictor": {
+    "name": "Neural Network",
+    "r2": 0.5415268466540806,
+    "mae": 2.516117845177773,
+    "rmse": 4.717833957207299
+  },
+  "best_log_analyzer": {
+    "name": "DBSCAN",
+    "silhouette_score": 1.0
+  },
+  "ranking_summary": {
+    "anomaly_ranking": [
+      "Isolation Forest",
+      "One-Class SVM"
+    ],
+    "prediction_ranking": [
+      "Neural Network",
+      "Elastic Net",
+      "Lasso Regression",
+      "Ridge Regression",
+      "Linear Regression",
+      "Gradient Boosting",
+      "Random Forest",
+      "Decision Tree"
+    ]
+  }
+}

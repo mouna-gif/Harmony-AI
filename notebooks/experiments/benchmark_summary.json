@@ -1,0 +1,17 @@
+{
+  "date": "2026-05-21 20:38:10",
+  "best_classifier": {
+    "name": "Neural Network (MLP)",
+    "f1_score": 0.7975148509016833,
+    "roc_auc": 0.8770021185494429,
+    "accuracy": 0.7982000000000001
+  },
+  "best_anomaly_detector": {
+    "name": "Isolation Forest",
+    "f1_score": 1.0
+  },
+  "best_optimization": {
+    "name": "Nelder-Mead",
+    "profit": 120.97924714434046
+  }
+}

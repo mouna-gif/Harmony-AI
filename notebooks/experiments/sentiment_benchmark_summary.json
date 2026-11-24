@@ -1,0 +1,13 @@
+{
+  "date": "2026-05-21 20:46:30",
+  "best_model": {
+    "name": "Naive Bayes",
+    "f1_score": 1.0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "ml_average_f1": 0.9973645306355107,
+  "lexique_average_f1": 0.37563149920060024,
+  "improvement_percent": 62.17330314349104
+}

@@ -1,0 +1,12 @@
+﻿node_modules/
+dist/
+.env
+.env.*
+!.ENV.EXAMPLE
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+coverage/
+.vscode/

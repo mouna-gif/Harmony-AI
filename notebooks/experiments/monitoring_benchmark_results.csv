@@ -1,0 +1,8 @@
+Algorithme,Métrique,Valeur
+Anomaly Detection,F1-Score,1.031390134529148
+Anomaly Detection,Anomalies,50.0
+Performance Prediction,Accuracy,79.69657324018632
+Performance Prediction,MAE,6.13773636214969
+Log Analysis,Patterns,8.0
+Log Analysis,Error Rate,9.6
+Health Score,Global Score,61.46419925567617

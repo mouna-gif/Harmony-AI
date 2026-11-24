@@ -1,0 +1,76 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║         RAPPORT FINAL - BENCHMARK USER MANAGEMENT IA                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📅 Date: 2026-05-21 21:25:58
+🎯 Objectif: Justifier les choix algorithmiques pour le module UserManagement
+
+📊 Dataset: 500 utilisateurs, 5829 connexions, 9888 actions
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 1. RÉSULTATS PAR ALGORITHME                                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🏆 USER BEHAVIOR ANALYTICS (UBA):
+   • Utilisateurs analysés: 500
+   • Comportements suspects: 0
+   • Heure de pointe: 23h-25h
+   • Utilisateur le plus actif: User_145
+
+🏆 RISK SCORING:
+   • Meilleur modèle: Decision Tree (F1-Score: 0.667)
+   • Gradient Boosting Accuracy: 0.920
+   • AUC: 0.952
+   • Score de risque moyen: 3/100
+
+🏆 CHURN PREDICTION:
+   • Random Forest Accuracy: 0.930
+   • AUC: 0.875
+   • Taux de churn global: 8.8%
+   • Utilisateurs haut risque: 0
+
+🏆 LOGIN ANOMALY DETECTION:
+   • Isolation Forest: 276 anomalies
+   • Taux faux positifs: 1.8%
+   • Temps détection: 120ms
+   • Alertes géofencing: 0
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 2. CLASSEMENT ALGORITHMES RISK SCORING                                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+         Algorithme  F1-Score  Accuracy    AUC
+      Decision Tree    0.6667      0.96 0.7803
+  Gradient Boosting    0.4000      0.94 0.7051
+          KNN (k=5)    0.2500      0.94 0.7012
+           AdaBoost    0.2000      0.92 0.8779
+      Random Forest    0.0000      0.92 0.8948
+Logistic Regression    0.0000      0.93 0.9616
+          SVM (RBF)    0.0000      0.93 0.5177
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 3. RECOMMANDATIONS POUR USERMANAGEMENT.TSX                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ ALGORITHMES RECOMMANDÉS:
+
+1. USER BEHAVIOR ANALYTICS → Analyse comportementale
+   • Justification: Détection des patterns anormaux
+   • Implémentation: Markov Chains + Sequence Analysis
+
+2. Decision Tree → Score de risque utilisateur
+   • Justification: Meilleur F1-Score (0.667)
+   • Implémentation: Modèle entraîné sur features comportementales
+
+3. RANDOM FOREST → Prédiction churn
+   • Justification: Bonne performance, interprétable
+   • Implémentation: Features d'engagement et d'activité
+
+4. ISOLATION FOREST → Détection anomalies connexion
+   • Justification: Détection rapide, faible faux positifs
+   • Implémentation: Analyse temporelle + géographique
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          FIN DU RAPPORT                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝

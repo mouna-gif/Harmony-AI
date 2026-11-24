@@ -1,0 +1,41 @@
+# prometheus.yml - Configuration Prometheus
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    project: harmony_ai
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+          # alertmanager:9093
+
+rule_files:
+  # - "alerts.yml"
+
+scrape_configs:
+  # Prometheus self-metrics
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Application metrics (votre API FastAPI)
+  - job_name: 'harmony_app'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['web:8000']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'harmony_app'
+
+  # Node metrics (si node-exporter est ajouté)
+  # - job_name: 'node'
+  #   static_configs:
+  #     - targets: ['node-exporter:9100']
+
+  # Docker metrics (si cadvisor est ajouté)
+  # - job_name: 'docker'
+  #   static_configs:
+  #     - targets: ['cadvisor:8080']

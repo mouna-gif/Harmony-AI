@@ -1,0 +1,6 @@
+Algorithme,Précision,Rappel,F1-Score,Anomalies détectées
+Isolation Forest,1.0,1.0,1.0,250
+Elliptic Envelope,1.0,1.0,1.0,250
+One-Class SVM,0.6276150627615062,0.6,0.6134969325153374,239
+DBSCAN,0.05,1.0,0.09523809523809523,5000
+Local Outlier Factor,0.02,0.02,0.02,250

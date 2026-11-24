@@ -1,0 +1,4 @@
+Algorithme,Clusters,Bruit,Silhouette Score,Temps (s)
+DBSCAN,10,0,1.0,0
+K-Means,5,0,0.5529520115100579,0
+Agglomerative,5,0,0.5529520115100579,0

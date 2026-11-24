@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-21 21:01:36",
+  "total_risks": 20,
+  "avg_current_score": 34.36088512012819,
+  "avg_monte_carlo": 178.49568625464482,
+  "avg_bayesian": 56.642205236678976,
+  "avg_ai_score": 42.727962984205135,
+  "total_anomalies": 60,
+  "most_common_action": "Éviter",
+  "action_distribution": {
+    "Atténuer": 0,
+    "Transférer": 0,
+    "Accepter": 0,
+    "Éviter": 20
+  },
+  "correlations": {
+    "monte_carlo_vs_current": 0.9912862941908075,
+    "ai_vs_current": 0.969313111331489,
+    "bayesian_vs_current": 0.8719800633554257
+  }
+}

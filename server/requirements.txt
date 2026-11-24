@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+gunicorn
+pandas
+numpy
+scikit-learn
+joblib
+python-dotenv
+mlflow
+prometheus-client

@@ -1,0 +1,4 @@
+Algorithme,Précision,Rappel,F1-Score
+Isolation Forest,1.0,0.86,0.9247311827956989
+Elliptic Envelope,1.0,0.86,0.9247311827956989
+One-Class SVM,0.5454545454545454,0.6,0.5714285714285714

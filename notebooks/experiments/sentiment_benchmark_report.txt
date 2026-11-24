@@ -1,0 +1,62 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║         RAPPORT FINAL - BENCHMARK ANALYSE DE SENTIMENT                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📅 Date: 2026-05-21 20:44:24
+🎯 Objectif: Justifier le choix des algorithmes pour le module de sentiment analysis
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 1. RÉSULTATS DU BENCHMARK                                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🏆 MEILLEUR ALGORITHME: Naive Bayes
+   • F1-Score: 1.0000
+   • Accuracy: 1.0000
+   • Précision: 1.0000
+   • Rappel: 1.0000
+   • Type: ML
+
+📊 Classement complet:
+           Algorithme  F1-Score  Accuracy    Type
+          Naive Bayes    1.0000    1.0000      ML
+         Bernoulli NB    1.0000    1.0000      ML
+  Logistic Regression    1.0000    1.0000      ML
+        Random Forest    1.0000    1.0000      ML
+                  SVM    1.0000    1.0000      ML
+    Gradient Boosting    1.0000    1.0000      ML
+        Decision Tree    0.9816    0.9817      ML
+SimpleVADER (Lexique)    0.4570    0.5083 Lexique
+   TextBlob (Lexique)    0.2943    0.4100 Lexique
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 2. ANALYSE COMPARATIVE                                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📈 Performance ML vs Lexique:
+   • Machine Learning (moyenne): 0.9974
+   • Lexique-based (moyenne): 0.3756
+   • Amélioration ML: +62.2%
+
+🎯 Points clés:
+   • Les modèles ML superforment les approches lexiques
+   • Logistic Regression offre le meilleur compromis performance/complexité
+   • SVM et Random Forest sont également très performants
+   • Les approches lexiques restent utiles pour les cas sans données d'entraînement
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 3. RECOMMANDATIONS POUR LA PLATEFORME REACT                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ ALGORITHME RECOMMANDÉ: Logistic Regression
+
+JUSTIFICATION:
+   • Meilleure performance globale (F1-Score: 1.0000)
+   • Temps d'inférence rapide (critique pour UX)
+   • Modèle interprétable (coefficients)
+   • Robuste aux petites variations
+   • Facile à déployer en production
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          FIN DU RAPPORT                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝

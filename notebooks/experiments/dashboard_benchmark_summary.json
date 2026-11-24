@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-21 21:37:18",
+  "predictor": {
+    "best": "Lasso Regression",
+    "r2": 0.3422861065667858,
+    "mae": 9.662001495189536
+  },
+  "optimizer": {
+    "best": "Nelder-Mead",
+    "profit": 120.97924714434046
+  },
+  "analyst": {
+    "best": "Isolation Forest",
+    "f1_score": 0.9247311827956989
+  },
+  "critic": {
+    "best": "SVM (RBF)",
+    "f1_score": 0.8513513513513513,
+    "accuracy": 0.78
+  }
+}

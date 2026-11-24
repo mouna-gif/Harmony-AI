@@ -1,0 +1,11 @@
+Algorithme,Métrique,Valeur
+Collaborative Filtering,RMSE,8.763796396270461e-16
+Collaborative Filtering,Precision@5,0.6890684940879491
+Collaborative Filtering,MRR,0.7531728930699348
+Multi-Armed Bandit,Best Reward,0.17727272727272728
+Multi-Armed Bandit,Regret,61.0
+Graph Neural Network,Accuracy,0.9576607637792044
+Graph Neural Network,F1-Score,0.9073578407013592
+Federated Learning,Global Accuracy,0.9027264309613212
+A/B Testing,Lift,26.459143968871597
+A/B Testing,Confidence,0.9999999999095155

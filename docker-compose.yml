@@ -1,0 +1,73 @@
+services:
+  web:
+    build: .
+    container_name: harmony_app
+    ports:
+      - "8000:8000"
+      - "5000:5000"
+    environment:
+      - ENV=production
+    restart: always
+    volumes:
+      - mlflow-data:/app/mlruns
+    networks:
+      - harmony_network
+
+  prometheus:
+    image: prom/prometheus
+    container_name: harmony_prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: always
+    networks:
+      - harmony_network
+
+  grafana:
+    image: grafana/grafana
+    container_name: harmony_grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: always
+    networks:
+      - harmony_network
+
+  # --- SERVICE LOKI (LOGS) ---
+  loki:
+    image: grafana/loki:latest
+    container_name: harmony_loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki-config.yaml:/etc/loki/local-config.yaml
+      - loki-data:/loki
+    # AJOUT DU FLAG DE VALIDATION (CORRECTION)
+    command: -config.file=/etc/loki/local-config.yaml -validation.allow-structured-metadata=false
+    restart: always
+    networks:
+      - harmony_network
+
+  # --- SERVICE PROMTAIL (AGENT LOGS) ---
+  promtail:
+    image: grafana/promtail:latest
+    container_name: harmony_promtail
+    volumes:
+      - ./promtail-config.yml:/etc/promtail/config.yml
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    command: -config.file=/etc/promtail/config.yml
+    restart: always
+    networks:
+      - harmony_network
+
+volumes:
+  mlflow-data:
+  loki-data:
+
+networks:
+  harmony_network:
+    driver: bridge

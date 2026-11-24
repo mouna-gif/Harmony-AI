@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-21 21:30:50",
+  "best_risk_classifier": {
+    "name": "Logistic Regression",
+    "f1_score": 0.9032258064516129,
+    "accuracy": 0.9925,
+    "auc_roc": 0.9991341991341991
+  },
+  "best_churn_predictor": {
+    "name": "Random Forest",
+    "f1_score": 0.6666666666666666,
+    "accuracy": 0.9975,
+    "auc_roc": 0.9974874371859297
+  },
+  "best_anomaly_detector": {
+    "name": "Isolation Forest",
+    "f1_score": 0.8932038834951457,
+    "precision": 0.8679245283018868,
+    "recall": 0.92
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-05-21 21:06:14",
+  "collaborative_filtering": {
+    "rmse": 8.763796396270461e-16,
+    "precision_at_5": 0.6890684940879491,
+    "recall_at_5": 0.5988862851813314,
+    "mrr": 0.7531728930699348,
+    "ndcg": 0.6837562579305589,
+    "coverage": 0.8995942028964928,
+    "diversity": 0.6845810405187632
+  },
+  "multi_armed_bandit": {
+    "best_arm": "In-App",
+    "best_reward": 0.17727272727272728,
+    "regret": 61.0,
+    "convergence_rate": 0.8886363636363637,
+    "total_pulls": 1000,
+    "total_reward": 159.0
+  },
+  "graph_neural_network": {
+    "accuracy": 0.9576607637792044,
+    "precision": 0.9321835445110634,
+    "recall": 0.8838201402640958,
+    "f1": 0.9073578407013592,
+    "nodes": 1000,
+    "edges": 15000,
+    "clusters": 4
+  },
+  "federated_learning": {
+    "global_accuracy": 0.9027264309613212,
+    "num_clients": 10,
+    "rounds": 50,
+    "privacy_guarantee": "(ε = 3.3, δ = 10⁻⁵)",
+    "model_size_reduction": 0.5520487540166814
+  },
+  "ab_testing": {
+    "lift": 26.459143968871597,
+    "p_value": 9.048452364323996e-11,
+    "is_significant": true,
+    "confidence_level": 0.9999999999095155,
+    "control_rate": 0.12336,
+    "variant_rate": 0.156
+  }
+}
