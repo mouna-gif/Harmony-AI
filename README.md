@@ -4,6 +4,30 @@
 
 Harmony AI est une plateforme complète d'optimisation intelligente avec système multi-agents IA, jumeau numérique, analytics avancés, analyse de sentiment, évaluation de risques, et bien plus.
 
+### Frontend
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React Router](https://img.shields.io/badge/React_Router-7-CA4245?logo=reactrouter&logoColor=white)](https://reactrouter.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Motion](https://img.shields.io/badge/Motion-Animations-FF4154?logo=framer&logoColor=white)](https://motion.dev/)
+[![Recharts](https://img.shields.io/badge/Recharts-Data_Visualization-22B5BF)](https://recharts.org/)
+[![i18next](https://img.shields.io/badge/i18next-Multilingual-26A69A?logo=i18next&logoColor=white)](https://www.i18next.com/)
+[![Sonner](https://img.shields.io/badge/Sonner-Toast_Notifications-000000)](https://sonner.emilkowal.ski/)
+
+### Backend
+[![Express](https://img.shields.io/badge/Express-5-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0.11-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Mongoose](https://img.shields.io/badge/Mongoose-ODM-880000)](https://mongoosejs.com/)
+[![JWT](https://img.shields.io/badge/JWT-Authentication-000000?logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![bcryptjs](https://img.shields.io/badge/bcryptjs-Password_Security-4A154B)](https://www.npmjs.com/package/bcryptjs)
+[![CORS](https://img.shields.io/badge/CORS-Cross_Origin-0078D4)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+### Prerequisites
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![pnpm](https://img.shields.io/badge/pnpm-Package_Manager-F69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0.11-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+
+
 ## 🏗️ Architecture
 
 ### Frontend
